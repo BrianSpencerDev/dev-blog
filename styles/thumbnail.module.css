@@ -1,0 +1,13 @@
+.thumbnail {
+    border-radius: 15px 15px 15px 15px;
+    height: 420px;
+    width: 800px;
+    transition: transform .2s;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.thumbnail:hover {
+  transform: scale(1.02)
+}

@@ -3,6 +3,7 @@ import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
+import Thumbnail from '../../components/thumbnail'
 
 
 
@@ -10,6 +11,7 @@ export default function Post({ postData }) {
   return (
     <Layout>
       <Head>
+        <Thumbnail image={postData.image} alt="..."/>
         <title>{postData.title}</title>
       </Head>
       <article>
